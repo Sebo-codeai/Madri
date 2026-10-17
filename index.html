@@ -1,3 +1,5 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="claude:viewport-fit-sides" content="cover">
 <title>La Madri Vol. 1</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +22,10 @@
   color-scheme: dark;
 }
 *{box-sizing:border-box}
+[hidden]{display:none!important}
+img{max-width:100%}
 html,body{margin:0}
+:root{padding:env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px)}
 body{
   background:radial-gradient(900px 500px at 50% -10%, #2a1b4d 0%, transparent 70%), var(--bg);
   color:var(--ink);font-family:var(--display);min-height:100%;
