@@ -1146,8 +1146,8 @@ function frame(ts){
 var ov=document.getElementById('ov'), ovTitle=document.getElementById('ovTitle'),
     ovText=document.getElementById('ovText'), ovKeys=document.getElementById('ovKeys'),
     ovBtn=document.getElementById('ovBtn'), btnPause=document.getElementById('btnPause');
-function showOverlay(t,txt,keysTxt,btn){ ovTitle.textContent=t; ovText.textContent=txt; ovKeys.innerHTML=keysTxt; ovBtn.textContent=btn; ov.hidden=false; }
-function hideOverlay(){ ov.hidden=true; }
+function showOverlay(t,txt,keysTxt,btn){ ovTitle.textContent=t; ovText.textContent=txt; ovKeys.innerHTML=keysTxt; ovBtn.textContent=btn; ov.hidden=false; ov.style.display='flex'; }
+function hideOverlay(){ ov.hidden=true; ov.style.display='none'; }
 ovBtn.addEventListener('click',function(){
   AC();
   if(S.scene==='title'){ S.score=0; S.lives=3; S.wings=0; S.phrase=0; startLevel(0); }
